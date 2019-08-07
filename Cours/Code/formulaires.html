@@ -7,11 +7,11 @@
     	<!-- Le type d'encodage des caractères est l'UTF-8 --> 
         <meta charset="utf-8" />
         <!-- Le titre de la page (affiché au niveau de l'onglet dans le navigateur) -->
-        <title>Médias</title>
+        <title>Formulaires</title>
     </head>
 
     <body>
-		<form method="post" action="trait_form.php">
+		<!--<form method="post" action="trait_form.php">
 		    <p>
 				<label for="username">Nom d’utilisateur :</label>
 				<input type="text" id="username" name="username_result" />
@@ -58,12 +58,12 @@
 				<label for="tel">Téléphone :</label>
 				<input type="tel" id="tel" name="tel_result" />
 		    </p>
-		</form>
+		</form>-->
 
 
-		<form method="post" action="trait_form.php">
+		<!--<form method="post" action="trait_form.php">
 		    <p>
-				<label for="mark">Note entre 1 et 10 :</label>
+				<label for="mark">Note entre 0 et 10 :</label>
 				<input type="range" id="mark" name="mark_result" min="0" max="10" step="1" />
 		    </p>
 		</form>
@@ -73,30 +73,34 @@
 				<label for="color">Quelle est votre couleur préférée ?</label>
 				<input type="color" id="color" name="color_result" value="#000000" />
 		    </p>
-		</form>
+		</form>-->
 
-		<form method="post" action="trait_form.php">
-		    <p>
-				Combien d'heure de sport faites-vous par semaine en moyenne ?<br />
-				<input type="radio" id="moins2h" name="freq_sport" value="moins2h" /><label for="moins2h">Moins de 2h</label>
-				<input type="radio" id="2h_3h" name="freq_sport" value="2h_3h" /><label for="2h_3h">Entre 2h et 3h</label>
-				<input type="radio" id="3h_4h" name="freq_sport" value="3h_4h" /><label for="3h_4h">Entre 3h et 4h</label>
-				<input type="radio" id="plus4h" name="freq_sport" value="plus4h" /><label for="plus4h">Plus de 4h</label>
-			</p>
-		</form>
+		<fieldset>
+			<legend>Sondage</legend>
 
-		<form method="post" action="traitement.php">
-		   	<p>
-		       	Quel type de vidéo YouTube regardez-vous :<br />
-		       	<input type="checkbox" name="lifestyle" id="lifestyle" /> <label for="lifestyle">Lifestyle</label><br />
-		       	<input type="checkbox" name="sport" id="sport" /> <label for="sport">Sport</label><br />
-		       	<input type="checkbox" name="humour" id="humour" /> <label for="humour">Divertissement et humour</label><br />
-		       	<input type="checkbox" name="beaute" id="beaute" /> <label for="beaute">Tuto beauté</label><br />
-		       	<input type="checkbox" name="autre" id="autre" /> <label for="autre">Autre type de vidéo</label>
-		   	</p>
-		</form>
+			<form method="post" action="trait_form.php">
+			    <p>
+					Combien d'heure de sport faites-vous par semaine en moyenne ?<br />
+					<input type="radio" id="moins2h" name="freq_sport" value="moins2h" /><label for="moins2h">Moins de 2h</label>
+					<input type="radio" id="2h_3h" name="freq_sport" value="2h_3h" /><label for="2h_3h">Entre 2h et 3h</label>
+					<input type="radio" id="3h_4h" name="freq_sport" value="3h_4h" /><label for="3h_4h">Entre 3h et 4h</label>
+					<input type="radio" id="plus4h" name="freq_sport" value="plus4h" /><label for="plus4h">Plus de 4h</label>
+				</p>
+			</form>
 
-		<form method="post" action="traitement.php">
+			<form method="post" action="traitement.php">
+			   	<p>
+			       	Quel type de vidéo YouTube regardez-vous :<br />
+			       	<input type="checkbox" name="lifestyle" id="lifestyle" /> <label for="lifestyle">Lifestyle</label><br />
+			       	<input type="checkbox" name="sport" id="sport" /> <label for="sport">Sport</label><br />
+			       	<input type="checkbox" name="humour" id="humour" /> <label for="humour">Divertissement et humour</label><br />
+			       	<input type="checkbox" name="beaute" id="beaute" /> <label for="beaute">Tuto beauté</label><br />
+			       	<input type="checkbox" name="autre" id="autre" /> <label for="autre">Autre type de vidéo</label>
+			   	</p>
+			</form>
+		</fieldset>
+
+		<!--<form method="post" action="traitement.php">
 		   	<p>
 		    	<label for="pays">Sélectionnez une langue :</label><br />
 		       	<select name="pays" id="pays">
@@ -105,9 +109,9 @@
 		           	<option value="anglais">anglais</option>
 		       	</select>
 		   	</p>
-		</form>
+		</form>-->
 
-		<form method="post" action="traitement.php">
+		<!--<form method="post" action="traitement.php">
 		   	<p>
 		       	<label for="langue">Sélectionnez une langue :</label><br />
 		      	<select name="langue" id="langue">
@@ -125,6 +129,14 @@
 		       	</select>
 		   	</p>
 		</form>
+
+		<form method="post" action="trait_form.php">
+		    <p>
+				<label for="commentaire">Laissez un commentaire si vous le souhaitez :</label><br />
+				<textarea name="commentaire" id="commentaire"></textarea>
+		    </p>
+		</form>-->
+
 
     </body>
 </html>
