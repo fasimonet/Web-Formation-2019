@@ -1,0 +1,15 @@
+td {
+	border: 1px solid black;
+}
+
+th {
+	border: 1px solid black;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+a {
+	margin: 100px;
+}
