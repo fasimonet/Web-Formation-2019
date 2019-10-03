@@ -1,0 +1,26 @@
+.parent {
+	border: 3px solid black;
+	display: flex;
+}
+
+.enfant {
+	width: 100px;
+	height: 100px;
+	text-align: center;
+}
+
+.enfant:nth-child(1) {
+	background-color: red;
+}
+
+.enfant:nth-child(2) {
+	background-color: blue;
+}
+
+.enfant:nth-child(3) {
+	background-color: orange;
+}
+
+.enfant:nth-child(4) {
+	background-color: green;
+}

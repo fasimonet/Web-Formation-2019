@@ -1,0 +1,56 @@
+/* Ma palette de couleur (recuperee sur Coolors.co)
+	- MAYA BLUE : #5cc8ff
+	- CINEREOUS : #93867f
+	- JET : #343633
+	- TOOLBOX : #7d70ba
+	- PALE LAVENDER : #dec1ff
+	- DARK BLUE-GRAY : #615791
+	- PURPLE NAVY : #s554c7f
+*/
+
+/* Conteneurs */
+
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+header {
+	background-color: #93867f;
+	padding: 5px;
+}
+
+header nav {
+	display: inline-block;
+	width: 200px;
+	border: 1px solid black;
+	vertical-align: top;
+}
+
+/* Elements textuels */
+
+h1 {
+	color: black;
+	text-align: center;
+}
+
+p {
+	color : #343633;
+}
+
+a {
+	text-decoration: none;
+	color: #343633;
+}
+
+ul {
+	list-style-type: none;
+}
+
+/* Classes et identifiants */
+
+.intro {
+	display: inline-block;
+	border: 1px solid black;
+	vertical-align: top;
+}
