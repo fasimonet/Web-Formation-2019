@@ -1,6 +1,9 @@
 .parent {
 	border: 3px solid black;
 	display: flex;
+	justify-content: space-around;
+	align-items: right;
+	height: 300px;
 }
 
 .enfant {
@@ -11,16 +14,20 @@
 
 .enfant:nth-child(1) {
 	background-color: red;
+	order: 3;
 }
 
 .enfant:nth-child(2) {
 	background-color: blue;
+	order: 1;
 }
 
 .enfant:nth-child(3) {
 	background-color: orange;
+	order: 4;
 }
 
 .enfant:nth-child(4) {
 	background-color: green;
+	order: 2;
 }
